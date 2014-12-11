@@ -4,7 +4,7 @@ with open('README.md') as f:
     readme = f.read()
 
 setup(
-    version='99.0.0',
+    version='99.0.1',
     name='FuelSDK',
     description='ExactTarget Fuel SDK for Python',
     long_description=readme,
@@ -16,7 +16,7 @@ setup(
     license='MIT',
     install_requires=[
         'pyjwt==0.1.9',
-        'requests==2.2.1',
+        'requests>=2.2.1,<=2.5.0',
         'suds==0.4',
     ],
     classifiers=[
